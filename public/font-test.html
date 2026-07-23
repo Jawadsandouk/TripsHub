@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        @font-face {
+            font-family: 'Material Symbols Outlined';
+            font-style: normal;
+            font-weight: 400;
+            src: url('/fonts/material-symbols/MaterialSymbolsOutlined.woff2') format('woff2');
+        }
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+        body { background: #111; color: #eee; font-family: sans-serif; padding: 40px; }
+        .icon-large { font-size: 48px; }
+        .test { margin: 20px 0; padding: 20px; background: #222; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <h2>Material Symbols Font Test</h2>
+    <div class="test">
+        <p><span class="material-symbols-outlined icon-large">directions_bus</span> — directions_bus</p>
+        <p><span class="material-symbols-outlined icon-large">home</span> — home</p>
+        <p><span class="material-symbols-outlined icon-large">search</span> — search</p>
+        <p><span class="material-symbols-outlined icon-large">settings</span> — settings</p>
+        <p><span class="material-symbols-outlined icon-large">star</span> — star</p>
+    </div>
+    <div class="test">
+        <h3>font-family test:</h3>
+        <p style="font-family: 'Material Symbols Outlined'; font-size: 48px;">directions_bus</p>
+        <p>↑ should be a bus icon if font-family works</p>
+    </div>
+    <div class="test">
+        <h3>With liga disabled:</h3>
+        <p style="font-family: 'Material Symbols Outlined'; font-size: 48px; font-feature-settings: 'liga' 0;">directions_bus</p>
+        <p>↑ should show text "directions_bus" (liga off)</p>
+    </div>
+</body>
+</html>

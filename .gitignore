@@ -1,0 +1,44 @@
+/vendor
+/node_modules
+public/storage
+/.env
+/.env.backup
+/.env.production
+/.phpunit.cache
+Homestead.json
+Homestead.yaml
+auth.json
+npm-debug.log
+yarn-error.log
+/.php-cs-fixer.cache
+
+# Laravel Telescope & Horizon
+/storage/debugbar
+/public/vendor/horizon
+/storage/horizon
+
+# Laravel IDE Helper
+_ide_helper.php
+_ide_helper_models.php
+.phpstorm.meta.php
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+
+# Cache & logs
+bootstrap/cache/*
+!bootstrap/cache/.gitkeep
+storage/logs/*
+!storage/logs/.gitkeep
+storage/framework/cache/data/*
+!storage/framework/cache/data/.gitkeep
+storage/framework/sessions/*
+!storage/framework/sessions/.gitkeep
+storage/framework/views/*
+!storage/framework/views/.gitkeep
+storage/framework/testing/*
