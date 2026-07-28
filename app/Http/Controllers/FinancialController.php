@@ -118,10 +118,12 @@ class FinancialController extends Controller
                 return $stat;
             });
 
+        $withdrawals = WithdrawalRequest::latest()->get();
+
         return view('owner.financials', compact(
             'totalBookings', 'totalOffices', 'totalTrips',
             'offices', 'paymentStats', 'pendingWithdrawalsCount',
-            'grossRevenue', 'totalCommission'
+            'grossRevenue', 'totalCommission', 'withdrawals'
         ) + ['totalRevenue' => $netRevenue]);
     }
 }
